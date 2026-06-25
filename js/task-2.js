@@ -13,9 +13,7 @@ class Storage {
   }
 
   removeItem(itemToRemove) {
-    this.#items = this.#items.filter(
-      item => this.#items.indexOf(item) !== this.#items.indexOf(itemToRemove)
-    );
+    this.#items = this.#items.filter(item => item != itemToRemove);
   }
 }
 
